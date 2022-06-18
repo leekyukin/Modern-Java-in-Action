@@ -1,5 +1,8 @@
 package com.java.chapter4;
 
+import java.util.Arrays;
+import java.util.List;
+
 // 책에서 스트림 예제에 쓰일 클레스
 public class Dish {
     private final String name;
@@ -37,5 +40,20 @@ public class Dish {
     }
 
     public enum Type { MEAT, FISH, OTHER };
+
+    // 예시 데이터들
+    static List<Dish> getDishes() {
+        return Arrays.asList(
+                new Dish("pork", false, 800, Dish.Type.MEAT),
+                new Dish("beef", false, 700, Dish.Type.MEAT),
+                new Dish("chicken", false, 400, Dish.Type.MEAT),
+                new Dish("french fries", true, 530, Type.OTHER),
+                new Dish("rice", true, 350, Type.OTHER),
+                new Dish("season fruit", true, 120, Dish.Type.OTHER),
+                new Dish("pizza", true, 550, Type.OTHER),
+                new Dish("prawns", false, 300, Type.FISH),
+                new Dish("salmon", false, 450, Type.FISH)
+        );
+    }
 }
 
