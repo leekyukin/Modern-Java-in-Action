@@ -1,4 +1,6 @@
-package com.java.chapter4;
+package com.java.STREAM_CH4.ch4_1;
+
+import com.java.STREAM_CH4.entity.Dish;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,7 +8,7 @@ import java.util.Comparator;
 import java.util.List;
 
 // Ex2 와 같은 연산에서 스트림을 사용하지 않은 코드
-public class Ex1 {
+public class Ex01 {
     public static void main(String[] args) {
         List<Dish> menu = Dish.getDishes();
         List<Dish> lowCaloricDishes = new ArrayList<>();

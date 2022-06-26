@@ -1,4 +1,4 @@
-package com.java.chapter4;
+package com.java.STREAM_CH4.entity;
 
 import java.util.Arrays;
 import java.util.List;
@@ -42,7 +42,7 @@ public class Dish {
     public enum Type { MEAT, FISH, OTHER };
 
     // 예시 데이터들
-    static List<Dish> getDishes() {
+    public static List<Dish> getDishes() {
         return Arrays.asList(
                 new Dish("pork", false, 800, Dish.Type.MEAT),
                 new Dish("beef", false, 700, Dish.Type.MEAT),

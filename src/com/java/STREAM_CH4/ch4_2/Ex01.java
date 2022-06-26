@@ -1,9 +1,11 @@
-package com.java.chapter4;
+package com.java.STREAM_CH4.ch4_2;
+
+import com.java.STREAM_CH4.entity.Dish;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Ex3 {
+public class Ex01 {
     public static void main(String[] args) {
         List<Dish> menu = Dish.getDishes();
         List<String> threeHighCaloricDishNames = menu.stream()
